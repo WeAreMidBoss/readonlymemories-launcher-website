@@ -1,0 +1,139 @@
+ @font-face {
+  font-family: 'BebasNeue';
+  src: url('../fonts/BebasNeue-Regular.eot');
+  src: url('../fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/BebasNeue-Regular.woff2') format('woff2'),
+       url('../fonts/BebasNeue-Regular.woff') format('woff'),
+       url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+};
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 176px;
+}
+
+.header-bar{
+    height: 10px;
+    background-color: #201a20;
+    margin-bottom: 30px;
+}
+
+.logo{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo img{
+    width: 120px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  nav.navbar .container {
+  }
+  nav.navbar .navbar-brand.d-sm-block img{
+    width: 90%;
+  }
+  .navbar-nav > li {
+    font-size: 1.5rem
+  }
+  footer {
+  text-align: center;
+  }
+  footer .social-links {
+  text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .jumbotron{
+    margin-top: 4em;
+  }
+  .midboss-castle {
+    width: auto;
+    max-height: 100px;
+  }
+  footer {
+    padding-bottom: 40px;
+  text-align: center;
+  }
+  footer .social-links {
+  text-align: center;
+  }
+
+  .logo img{
+    width: 80px;
+}
+}
+
+.container{
+            max-width: 1110px;
+            margin: 0 auto;
+        }
+
+.panel{
+    padding-bottom: 23.5191637630662%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1.2em;
+}
+.layer1, .layer2, .layer3{
+    position: absolute;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.panel img{
+    width: 100%;
+}
+.panel:hover .layer1{
+    transform: translate(0.1%, 0.8%);
+    filter: brightness(0.9);
+}
+.panel:hover .layer2{
+    transform: translate(-0.4%, -0.5%);
+}
+.panel:hover .layer3{
+    transform: translate(-0.4%, -1.0%);
+}
+.layer1{
+    filter: brightness(1.0);
+}
+
+footer {
+  color:#fff;
+  background: #201a20;
+  border-top: solid 2px #4d444d;
+  padding: 2.5em 0em 0.8em;
+  font-size: 0.9em;
+  line-height: 1.5;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 15px;
+}
+footer .social-links {
+  text-align: right;
+}
+footer .social-links a img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1em;
+}
+footer .social-links a:last-child img {
+  margin-right: 0;
+}
+
