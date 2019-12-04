@@ -65,7 +65,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-12">
-            <p>&copy; Copyright 2019<br>
+            <p>&copy; Copyright <span id="year"></span><br>
             MidBoss, LLC.<br>
           </p>
         </div>
@@ -79,6 +79,9 @@
       </div>
     <div>
   </footer>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
